@@ -30,9 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
-          token: ${{ secrets.GH_PAT || github.token }}
-      - name: Rebuild node-libcurl
-        uses: ./.github/actions/rebuild-libcurl          
+          token: ${{ secrets.GH_PAT || github.token }}         
       - name: Update code
         uses: upptime/updates@master
         env:
