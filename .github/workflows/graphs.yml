@@ -31,7 +31,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT || github.token }}
-      - name: Rebuild node-libcurl          # ← add block here
+      - name: Rebuild node-libcurl
         uses: ./.github/actions/rebuild-libcurl
       - name: Generate graphs
         uses: upptime/uptime-monitor@v1.40.1
