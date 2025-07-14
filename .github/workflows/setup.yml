@@ -32,6 +32,11 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT || github.token }}
+    #__________________________________________________
+      - name: Show runner architecture 
+        run: uname -m
+        shell: bash
+    #__________________________________________________
       - name: Update template
         uses: upptime/uptime-monitor@v1.40.1
         with:
