@@ -1,0 +1,14 @@
+name: Rebuild node-libcurl (x86-64)
+description: |
+  Re-compile node-libcurl so the action works on a Rosetta (x86-64) runner.
+
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        echo "Rebuilding node-libcurl for x86-64 macOS…"
+        npm install node-libcurl \
+          --build-from-source \
+          --platform=darwin \
+          --arch=x64
+      shell: bash
