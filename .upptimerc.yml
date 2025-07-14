@@ -3,11 +3,6 @@ repo: infra-status         # ← change if your repo has a different name
 # siteName: Ops Dashboard  # ← optional extras
 # siteUrl: https://<user>.github.io/<repo>/
 
-sites:
-# Optional extras:
-# siteName: “Ops Dashboard”
-# siteUrl:  “https://<your-github-username>.github.io/<repo-name>/”
-
 # ── Monitored endpoints ────────────────────────────────────────────────────────
 sites:
   - name: "2TEN Hotel & Convention Centre"
