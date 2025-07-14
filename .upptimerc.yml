@@ -2,6 +2,10 @@ owner: neoslinkee
 repo: infra-status         # ← change if your repo has a different name
 # siteName: Ops Dashboard  # ← optional extras
 # siteUrl: https://<user>.github.io/<repo>/
+runsOn:
+  - self-hosted
+  - macOS          # or macOS,ARM64 or internal – must match your runner labels
+  - internal
 
 # ── Monitored endpoints ────────────────────────────────────────────────────────
 sites:
