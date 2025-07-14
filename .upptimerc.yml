@@ -3,6 +3,12 @@ repo: infra-status         # ← change if your repo has a different name
 # siteName: Ops Dashboard  # ← optional extras
 # siteUrl: https://<user>.github.io/<repo>/
 
+# run inside the repo
+sed -i '' -e 's/\/ods$//' sites.yml      # macOS
+# sed -i 's/\/ods$//' sites.yml          # Linux
+git add sites.yml && git commit -m "remove /ods from URLs"
+git push
+
 sites:
   - name: "2TEN Hotel & Convention Centre"
     url: https://10.167.143.1/ods
