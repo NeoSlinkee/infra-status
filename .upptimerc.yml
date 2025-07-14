@@ -3,192 +3,191 @@ repo: infra-status         # ← change if your repo has a different name
 # siteName: Ops Dashboard  # ← optional extras
 # siteUrl: https://<user>.github.io/<repo>/
 
-# run inside the repo
-sed -i '' -e 's/\/ods$//' sites.yml      # macOS
-# sed -i 's/\/ods$//' sites.yml          # Linux
-git add sites.yml && git commit -m "remove /ods from URLs"
-git push
+sites:
+# Optional extras:
+# siteName: “Ops Dashboard”
+# siteUrl:  “https://<your-github-username>.github.io/<repo-name>/”
 
+# ── Monitored endpoints ────────────────────────────────────────────────────────
 sites:
   - name: "2TEN Hotel & Convention Centre"
-    url: https://10.167.143.1/ods
+    url: https://10.167.143.1
   - name: "African Sun Bulawayo Zimbabwe"
-    url: https://10.173.172.1/ods
+    url: https://10.173.172.1
   - name: "African Sun HI Harare Hotel"
-    url: https://10.174.119.1/ods
+    url: https://10.174.119.1
   - name: "Cardoso Hotel Maputo"
-    url: https://10.172.62.1/ods
+    url: https://10.172.62.1
   - name: "Century City Hotel Bridgewater & Bridgewater Apartments"
-    url: https://10.162.169.1/ods
+    url: https://10.162.169.1
   - name: "Century City Hotel Urban Square"
-    url: https://10.135.232.1/ods
+    url: https://10.135.232.1
   - name: "Christel House South Africa, Cape Town School"
-    url: https://10.162.92.1/ods
+    url: https://10.162.92.1
   - name: "Ciêla, Lusaka, a Tribute Portfolio Resort and Spa"
-    url: https://10.167.238.1/ods
+    url: https://10.167.238.1
   - name: "Cresta Grande, Cape Town"
-    url: https://10.172.36.1/ods
+    url: https://10.172.36.1
   - name: "Cresta Jwaneng Hotel"
-    url: https://10.174.69.1/ods
+    url: https://10.174.69.1
   - name: "Cresta Mahalapye Botswana"
-    url: https://10.173.173.1/ods
+    url: https://10.173.173.1
   - name: "Fancourt Hotel & Golf Estate"
-    url: https://10.169.4.1/ods
+    url: https://10.169.4.1
   - name: "Hotel Verde Cape Town Airport"
-    url: https://10.167.200.1/ods
+    url: https://10.167.200.1
   - name: "Novotel Kinshasa Hotel"
-    url: https://10.169.69.1/ods
+    url: https://10.169.69.1
   - name: "Queen Victoria Hotel V & A Waterfront"
-    url: https://10.173.204.1/ods
+    url: https://10.173.204.1
   - name: "Radisson Blu Livingstone Hotel, Zambia"
-    url: https://10.166.96.1/ods
+    url: https://10.166.96.1
   - name: "Southern Sun - 54 on Bath"
-    url: https://10.164.194.1/ods
+    url: https://10.164.194.1
   - name: "Southern Sun - Arabella Hotel Golf & Spa"
-    url: https://10.169.133.1/ods
+    url: https://10.169.133.1
   - name: "Southern Sun - Beacon Island Resort"
-    url: https://10.168.29.1/ods
+    url: https://10.168.29.1
   - name: "Southern Sun - Beverly Hills Hotel"
-    url: https://10.164.189.1/ods
+    url: https://10.164.189.1
   - name: "Southern Sun - Bloemfontein"
-    url: https://10.164.146.1/ods
+    url: https://10.164.146.1
   - name: "Southern Sun - Cabana Beach Resort"
-    url: https://10.165.63.1/ods
+    url: https://10.165.63.1
   - name: "Southern Sun - Cape Town"
-    url: https://10.164.147.1/ods
+    url: https://10.164.147.1
   - name: "Southern Sun - Drakensberg Sun Resort"
-    url: https://10.164.160.1/ods
+    url: https://10.164.160.1
   - name: "Southern Sun - Elangeni & Maharani"
-    url: https://10.164.218.1/ods
+    url: https://10.164.218.1
   - name: "Southern Sun - Emnotweni"
-    url: https://10.164.149.1/ods
+    url: https://10.164.149.1
   - name: "Southern Sun - Garden Court East London"
-    url: https://10.164.164.1/ods
+    url: https://10.164.164.1
   - name: "Southern Sun - Garden Court Eastgate"
-    url: https://10.164.81.1/ods
+    url: https://10.164.81.1
   - name: "Southern Sun - Garden Court Hatfield"
-    url: https://10.164.165.1/ods
+    url: https://10.164.165.1
   - name: "Southern Sun - Garden Court Kimberley"
-    url: https://10.164.166.1/ods
+    url: https://10.164.166.1
   - name: "Southern Sun - Garden Court Kings Beach"
-    url: https://10.164.167.1/ods
+    url: https://10.164.167.1
   - name: "Southern Sun - Garden Court Marine Parade"
-    url: https://10.164.168.1/ods
+    url: https://10.164.168.1
   - name: "Southern Sun - Garden Court Milpark"
-    url: https://10.164.169.1/ods
+    url: https://10.164.169.1
   - name: "Southern Sun - Garden Court Morningside Sandton"
-    url: https://10.164.170.1/ods
+    url: https://10.164.170.1
   - name: "Southern Sun - Garden Court Mthatha"
-    url: https://10.164.177.1/ods
+    url: https://10.164.177.1
   - name: "Southern Sun - Garden Court Nelson Mandela Boulevard"
-    url: https://10.171.186.1/ods
+    url: https://10.171.186.1
   - name: "Southern Sun - Garden Court O.R Tambo International Airport"
-    url: https://10.164.171.1/ods
+    url: https://10.164.171.1
   - name: "Southern Sun - Garden Court Polokwane"
-    url: https://10.164.172.1/ods
+    url: https://10.164.172.1
   - name: "Southern Sun - Garden Court Sandton City"
-    url: https://10.164.173.1/ods
+    url: https://10.164.173.1
   - name: "Southern Sun - Garden Court South Beach"
-    url: https://10.164.174.1/ods
+    url: https://10.164.174.1
   - name: "Southern Sun - Garden Court Ulundi"
-    url: https://10.164.175.1/ods
+    url: https://10.164.175.1
   - name: "Southern Sun - Garden Court Umhlanga"
-    url: https://10.164.176.1/ods
+    url: https://10.164.176.1
   - name: "Southern Sun - Garden Court Victoria Junction"
-    url: https://10.163.128.1/ods
+    url: https://10.163.128.1
   - name: "Southern Sun - Hazyview Sun"
-    url: https://10.169.132.1/ods
+    url: https://10.169.132.1
   - name: "Southern Sun - Hyde Park Sandton"
-    url: https://10.164.150.1/ods
+    url: https://10.164.150.1
   - name: "Southern Sun - IC Airport OR Tambo"
-    url: https://10.164.190.1/ods
+    url: https://10.164.190.1
   - name: "Southern Sun - Katherine Street Sandton"
-    url: https://10.164.151.1/ods
+    url: https://10.164.151.1
   - name: "Southern Sun - Maputo"
-    url: https://10.164.159.1/ods
+    url: https://10.164.159.1
   - name: "Southern Sun - Mount Grace Hotel & Spa"
-    url: https://10.169.134.1/ods
+    url: https://10.169.134.1
   - name: "Southern Sun - Newlands"
-    url: https://10.164.153.1/ods
+    url: https://10.164.153.1
   - name: "Southern Sun - O.R. Tambo International Airport"
-    url: https://10.164.154.1/ods
+    url: https://10.164.154.1
   - name: "Southern Sun - Pretoria"
-    url: https://10.164.155.1/ods
+    url: https://10.164.155.1
   - name: "Southern Sun - Riverside Sun"
-    url: https://10.164.161.1/ods
+    url: https://10.164.161.1
   - name: "Southern Sun - Rosebank"
-    url: https://10.167.230.1/ods
+    url: https://10.167.230.1
   - name: "Southern Sun - Sabi River Sun Resort"
-    url: https://10.164.162.1/ods
+    url: https://10.164.162.1
   - name: "Southern Sun - Sandton"
-    url: https://10.167.231.1/ods
+    url: https://10.167.231.1
   - name: "Southern Sun - Sandton Convention Centre"
-    url: https://10.164.188.1/ods
+    url: https://10.164.188.1
   - name: "Southern Sun - Sandton Sun"
-    url: https://10.164.193.1/ods
+    url: https://10.164.193.1
   - name: "Southern Sun - Sandton Towers"
-    url: https://10.164.191.1/ods
+    url: https://10.164.191.1
   - name: "Southern Sun - Stay Easy Emnotweni - Nelspruit"
-    url: https://10.164.180.1/ods
+    url: https://10.164.180.1
   - name: "Southern Sun - StayEasy Cape Town, City Bowl"
-    url: https://10.164.184.1/ods
+    url: https://10.164.184.1
   - name: "Southern Sun - StayEasy Century City"
-    url: https://10.164.178.1/ods
+    url: https://10.164.178.1
   - name: "Southern Sun - StayEasy Eastgate"
-    url: https://10.164.179.1/ods
+    url: https://10.164.179.1
   - name: "Southern Sun - StayEasy Pietermaritzburg"
-    url: https://10.164.182.1/ods
+    url: https://10.164.182.1
   - name: "Southern Sun - StayEasy Pretoria"
-    url: https://10.164.183.1/ods
+    url: https://10.164.183.1
   - name: "Southern Sun - StayEasy Rustenburg"
-    url: https://10.164.185.1/ods
+    url: https://10.164.185.1
   - name: "Southern Sun - Sun Square - Cape Town City Bowl"
-    url: https://10.164.187.1/ods
+    url: https://10.164.187.1
   - name: "Southern Sun - Sun Square Cape Town Gardens"
-    url: https://10.164.163.1/ods
+    url: https://10.164.163.1
   - name: "Southern Sun - The Cullinan"
-    url: https://10.164.157.1/ods
+    url: https://10.164.157.1
   - name: "Southern Sun - The Edward Hotel, Durban"
-    url: https://10.169.113.1/ods
+    url: https://10.169.113.1
   - name: "Southern Sun - The Marine, Port Elizabeth"
-    url: https://10.170.122.1/ods
+    url: https://10.170.122.1
   - name: "Southern Sun - uMhlanga Sands Resort"
-    url: https://10.165.67.1/ods
+    url: https://10.165.67.1
   - name: "Southern Sun - Waterfront Cape Town"
-    url: https://10.164.158.1/ods
+    url: https://10.164.158.1
   - name: "The Oyster Box Hotel"
-    url: https://10.172.244.1/ods
+    url: https://10.172.244.1
   - name: "The Victoria Falls Hotel"
-    url: https://10.171.44.1/ods
+    url: https://10.171.44.1
   - name: "The Westin Cape Town"
-    url: https://10.173.8.1/ods
+    url: https://10.173.8.1
   - name: "The Winchester Boutique Hotel, South Africa"
-    url: https://10.171.246.1/ods
+    url: https://10.171.246.1
   - name: "Tsogo Sun - Hemingways Hotel"
-    url: https://10.164.145.1/ods
+    url: https://10.164.145.1
   - name: "Tsogo Sun - Hotel Perte"
-    url: https://10.168.90.1/ods
+    url: https://10.168.90.1
   - name: "Tsogo Sun - HQs Demo"
-    url: https://10.167.144.1/ods
+    url: https://10.167.144.1
   - name: "Tsogo Sun - Palazzo Montecasino"
-    url: https://10.164.192.1/ods
+    url: https://10.164.192.1
   - name: "Tsogo Sun - Piazza Montecasino"
-    url: https://10.164.186.1/ods
+    url: https://10.164.186.1
   - name: "Tsogo Sun - Pivot Montecasino"
-    url: https://10.164.152.1/ods
+    url: https://10.164.152.1
   - name: "Tsogo Sun - Suncoast Hotel & Towers"
-    url: https://10.164.156.1/ods
+    url: https://10.164.156.1
   - name: "Tsogo Sun - The Ridge Hotel"
-    url: https://10.167.232.1/ods
+    url: https://10.167.232.1
   - name: "Tsogo Sun - The Ridge Point Hotel"
-    url: https://10.164.181.1/ods
+    url: https://10.164.181.1
   - name: "Tsogo Sun - VIRTUAL DEMO"
-    url: https://10.164.26.1/ods
+    url: https://10.164.26.1
   - name: "Tsogo Sun HQ´s - DEMO Site"
-    url: https://10.162.91.1/ods
+    url: https://10.162.91.1
   - name: "Victoria & Alfred Hotel Cape Town"
-    url: https://10.173.23.1/ods
-
+    url: https://10.173.23.1
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
