@@ -1,3 +1,5 @@
+skipTemplateUpdates: true
+
 owner: neoslinkee
 repo: infra-status         # ← change if your repo has a different name
 # siteName: Ops Dashboard  # ← optional extras
